@@ -1,3 +1,5 @@
+#### Este ejercicio consiste en el desarrollo de el buyer, publico objetivo, UI, UX y requerimientos en base al caso Abogabot.
+
 # Abogabot
 
 ## Caso Abogabot
