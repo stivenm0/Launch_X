@@ -15,13 +15,15 @@ Es un despacho de abogados que quiere automatizar las demandas de sus clientes, 
 `Detalles`: La página debe de ser responsive para poderla ver desde el celular. La preferncia de colores del cliente es azul marino y blanco, pero acepta propuestas.
 
 
+# Buyer
+![Buyer](./images/Buyer.png)
+  
+# Publico Objetivo
+![Publico Objetivo](./images/PublicoObjetivo.png)
 
+# UI Interfaz de Usuario
+![UI](./images/UI.png)
 
-
-
-
-
-
-
-
+# UX Experiencia de Usuario
+![UX](./images/UX.png)
 
