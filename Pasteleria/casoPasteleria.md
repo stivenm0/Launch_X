@@ -1,4 +1,4 @@
-# Pastelería Galaktus
+# Pastelería Galaktos
 
 ## Requerimientos 
 
