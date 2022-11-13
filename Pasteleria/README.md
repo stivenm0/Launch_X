@@ -7,3 +7,9 @@
 `Pastelero:` El pastelero debe tener acceso al inventario de sabores y adornos, también, debe tener una tabla donde le aparezcan los pedidos que se han realizado por el formulario. 
 
 `Detalles:` La página debe tener información de la pastelería que es Dirección, Teléfono y horarios de atención.
+
+# Boceto Cliente
+![UI](./Bocetos/BocetoCliente.png)
+
+# Boceto Pastelero
+![UI](./Bocetos/BocetoPastelero.png)
