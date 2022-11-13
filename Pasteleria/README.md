@@ -1,4 +1,4 @@
-# Pastelería Galaktos
+# Pastelería Galaktos https://galaktos.netlify.app/
 
 ## Requerimientos 
 
@@ -8,8 +8,8 @@
 
 `Detalles:` La página debe tener información de la pastelería que es Dirección, Teléfono y horarios de atención.
 
-# Boceto Cliente
+# `Boceto Cliente`
 ![UI](./Bocetos/BocetoCliente.png)
 
-# Boceto Pastelero
+# `Boceto Pastelero`
 ![UI](./Bocetos/BocetoPastelero.png)
