@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pokedex</title>
+</head>
+<body>
+
+    <!-- HEADER---------------------->
+    <header>
+        <div class="logo d-c">
+            <img src="./images/Pokémon_logo.png" alt="pokemon logo" width="200px">
+            <button class="manual" id="ints" onclick="MODAL_MANUAL()">?</button>
+        </div>
+    </header>
+
+    <dialog id="instrucciones" class="">
+        <div class="d-c">
+                    <h1>Bienvenid@</h1>
+                    <p>
+                        Puedes realizar la búsqueda de un pokemon por numero o nombre en la barra de búsqueda debajo de la pantalla.
+                        botones:
+                    </p>
+                    <span class="explanation d-c" >
+                            <span class="onn d-c"  title="encender la pokedes" >
+                                    <img src="./images/on-off.png" alt="">
+                            </span>   
+                            <p>Botón de encendido y apagado. </p>
+                    </span>
+                    <span class="explanation d-c">
+                        <div >                                           
+                            <svg style="width: 20px; height:20px;  color: rgb(0, 0, 0); background-color: aliceblue;" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M15.707 4.293a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 011.414-1.414L10 8.586l4.293-4.293a1 1 0 011.414 0zm0 6a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L10 14.586l4.293-4.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                            <svg style="width: 20px; height:20px;  color: rgb(0, 0, 0); background-color: aliceblue;" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414 0zm0-6a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <p>Flechas verticales muestran estadísticas de pokemon.</p>
+                    </span>
+                    <span class="explanation d-c">
+                        <div >       
+                            <svg style="width: 20px; height:20px; color: rgb(0, 0, 0); background-color: aliceblue;" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>                                    
+                            <svg style="width: 20px; height:20px;  color: rgb(0, 0, 0); background-color: aliceblue;" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                        </div>
+                        <p>flechas horizontales son para navegar entre la lista de pokemones.</p>
+                    </span>
+
+                    <button onclick="MODAL_MANUAL()" class="exit">X</button>
+        </div>
+
+        <div class="by">
+                <a href="https://github.com/stivenm0/Launch_X/tree/main/Pokedex" target="_blank"><img src="./images/signo-de-github.png" alt=""></a>
+                <a href="https://twitter.com/stivenm_0" target="_blank"><img src="./images/signo-de-twitter.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/maycol-estiven-mu%C3%B1oz-a927a8207/" target="_blank"><img src="./images/logotipo-de-linkedin.png" alt=""></a>
+        </div>
+
+    </dialog>
+
+    
+
+    <main class="pokedex d-c">
+        
+
+    <!-- ------------------LEFT PANEL---------------------------------- -->
+        <div class="left">
+                <!----- LIGHTS--------------------->
+                    <div class="left1 d-c"> 
+                            <div class="inter1 d-c">
+                                <div class="white-circle d-c b-2">
+                                    <div class="blue-circle">
+                                        <div class="light"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="inter2">
+                                <div class="lights d-c">
+                                    <span class="red"></span>
+                                    <span class="yellow"></span>
+                                    <span class="green"></span>
+                                </div>
+                            </div>
+                    </div>
+
+
+                    <!----- PANEL -------------------------->
+                    <div class="left2 d-c">
+
+                        <div class="inter3 d-c b-2" >
+                            
+                            <!------------ SCREEN ----------->
+                            <div class="screen b-2 d-c">
+                                <!-- LIGHTS SCREEN -->
+                                <div class="lights-reds d-c">
+                                    <span ></span>
+                                    <span ></span>
+                                </div>
+                                <!-- INTO SCREEN -->
+                                <div class="screen-inter b-2 " id="img-pokemon">
+                                    
+                                </div>
+                                
+                                <!-- BOTTOM SCREEN -->
+                                <div class="screen-bottom d-c">
+                                    <span class="one"></span>
+                                    <span class="one"></span>
+                                    <span class="one"></span>
+                                </div>
+                            </div>
+
+                            <!------------ SEARCH ----------->
+                            <div class="nav-search d-c ">
+                                <input class="b-2" type="text" placeholder="POKEMON" maxlength="15" id="search" disabled required>
+                                    <button class="b-2" onclick="SEARCH()" disabled id="btn-search" for="search">
+                                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                        </svg>
+                                    </button>
+                                
+                            </div>
+                            
+                            
+                            <!------------- BOTTONS LEFT----------------- -->
+                            <div class="botons" id="botons">
+                                
+                                <div class="c-on d-c">
+                                <div class="d-c">
+                                    <div class="on" id="power" onclick="Encendido()" >
+                                        <img src="./images/on-off.png" alt="">
+                                    </div>
+                                    <button class="info b-2" onclick="MODAL_SCREEN()" id="btn_info">
+                                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M6.672 1.911a1 1 0 10-1.932.518l.259.966a1 1 0 001.932-.518l-.26-.966zM2.429 4.74a1 1 0 10-.517 1.932l.966.259a1 1 0 00.517-1.932l-.966-.26zm8.814-.569a1 1 0 00-1.415-1.414l-.707.707a1 1 0 101.415 1.415l.707-.708zm-7.071 7.072l.707-.707A1 1 0 003.465 9.12l-.708.707a1 1 0 001.415 1.415zm3.2-5.171a1 1 0 00-1.3 1.3l4 10a1 1 0 001.823.075l1.38-2.759 3.018 3.02a1 1 0 001.414-1.415l-3.019-3.02 2.76-1.379a1 1 0 00-.076-1.822l-10-4z" clipRule="evenodd" /></svg>                                  
+                                    </button>
+                                </div>
+                                    <div class="name d-c">
+                                        <input type="text" disabled value="" class="b-2" id="name-pokemon" >
+                                    </div>
+
+                                </div>
+                                
+                                <div class="cross d-c display-y">
+                                    <div class="vertical ">
+                                        <span class="boton-cross" onclick="STATISTICS()" >
+                                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414 0zm0-6a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                                        </span>
+                                        <span class="boton-cross" onclick="STATISTICS()">
+                                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M15.707 4.293a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 011.414-1.414L10 8.586l4.293-4.293a1 1 0 011.414 0zm0 6a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-5-5a1 1 0 111.414-1.414L10 14.586l4.293-4.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                        </span>
+                                    </div>
+                                    <div class="horizontal">
+                                        <span class="boton-cross" onclick="LEFT()">
+                                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M15.707 15.707a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 010 1.414zm-6 0a1 1 0 01-1.414 0l-5-5a1 1 0 010-1.414l5-5a1 1 0 011.414 1.414L5.414 10l4.293 4.293a1 1 0 010 1.414z" clip-rule="evenodd"></path></svg>
+                                        </span>
+                                        <span class="boton-cross" onclick="RIGHT()" >
+                                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 15.707a1 1 0 010-1.414L14.586 10l-4.293-4.293a1 1 0 111.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414L8.586 10 4.293 5.707a1 1 0 011.414-1.414l5 5a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0z" clip-rule="evenodd"></path></svg>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="display-n  scr b-2" id="screen-bottom">
+                                <button class="b-2" onclick="MODAL_SCREEN()">
+                                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+                                </button>
+                                <div class="display-n" id="data1">
+                                <p>Tipo: <span id="tipo" class="dat"></span> </p>
+                                <p>Especie: <span id="especie" class="dat"></span> </p>
+                                <p>Ataques: <span id="ataques" class="dat"></span> </p>
+                                </div>
+
+                            </div>
+
+                            <dialog  class="sc" id="dINFO">
+                                <p>Salud: <span id="salud"></span></p>
+                                <p>Ataque: <span id="ataque"></span></p>
+                                <p>Defensa: <span id="defensa"></span></p>
+                                <p>Defensa especial: <span id="SDefensa"></span></p>
+                                <p>Ataque especial: <span id="SAtaque"></span></p>
+                                <p>Velocidad: <span id="velocidad"></span></p>
+                                
+                                    <button class="b-2" onclick="STATISTICS()">
+                                        <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" /></svg>
+                                    </button>
+                                
+                              </dialog>
+                           
+
+
+                        </div>
+
+                        
+                        <!---------CREASE-------------->
+                            <div class="medium d-c">
+                                <br><hr><br><hr>
+                                <br><br><br><br><br><br>
+                                <br><br><br><br><br>
+                                <br><br><br><br><br><br>
+                                <br><hr><br><hr>
+                            </div>
+
+                    </div>
+        </div>
+
+        
+        <!-- ------------------right panel---------------------------------- -->
+        <div class="right">
+
+                <!-------------- TOP PANEL --------------------------->
+                <div class="right1 d-c">
+                    <div class="inter4"></div>
+                    <div class="inter5"></div>
+                </div>
+
+                <div class="right2 d-c">
+                    <div class="inter6 b-2 d-c">
+                        <!---------- SCREEN -------------->
+                        <div class="screen2">
+                            <div class=" scr2 b-2" id="screen-bottom">
+                                <div class="display-n" id="data2">
+                                <p>Tipo: <span id="tipo2" class="dat"></span> </p>
+                                <p>Especie: <span id="especie2" class="dat"></span> </p>
+                                <p>Ataques: <span id="ataques2" class="dat"></span> </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="squares">
+                                <span class="col" ></span>
+                                <span class="col"></span>
+                                <span class="col"></span>
+                                <span class="col"></span>
+                                <span class="col"></span>
+                                <!------------------------>
+                                <span class="col"></span>
+                                <span class="col"></span>
+                                <span class="col"></span>
+                                <span class="col"></span>
+                                <span class="col"></span>  
+                        </div>
+
+                        <div class="c-decoration">
+                            <div class="c-whites d-c">
+                                <div class="whiteS b-2"></div>
+                                <div class="whiteS b-2"></div>
+                            </div>
+
+                            <div class="c-whites d-c">
+                                <div class="circle-y">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="Screens">
+                            <div class="c-inp d-c ">
+                                <input type="text"  disabled class="inp b-2" id="height">
+                            </div>
+                            <div class="d-c c-inp" >
+                                <input type="text"  disabled class="inp b-2" id="weight" >
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+        </div>
+
+
+
+
+    </main>
+
+    
+    <script src="main.js"></script>    
+    
+</body>
+</html>
