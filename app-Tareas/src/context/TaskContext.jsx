@@ -5,7 +5,13 @@ export const TaskContext = createContext();
 
 export function TaskContextProvider(props) {
 
-  const [data, setData] = useState(JSON.parse(localStorage.getItem('tsks')));
+  const [data, setData] = useState(localStorage.getItem('tsks')?
+    JSON.parse(localStorage.getItem('tsks')): []
+  );
+
+
+  
+
 
   function createTask(title, description) {
     setData([
@@ -23,7 +29,7 @@ export function TaskContextProvider(props) {
   }
 
   useEffect(() => {
-       return localStorage.setItem('tsks', JSON.stringify(data));
+       localStorage.setItem('tsks', JSON.stringify(data));
   }, [data]);
 
   return (
